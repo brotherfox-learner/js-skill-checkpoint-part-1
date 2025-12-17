@@ -11,3 +11,13 @@ myTodo[3].todo = 'Go to the gym'
 myTodo.pop()
 
 console.log(`To-do id: ${myTodo[myTodo.length-1].id}, ${myTodo[myTodo.length-1].todo}`)
+
+// // สร้างเป็น Function ในการ Update todo จาก id แทน
+// const changeTodoById = (todoList,id,newText)=>{
+//  return todoList.map((item)=>{
+//     if(item.id === id){
+//       item.todo = newText
+//     } return item
+//   })
+// }
+// console.log(changeTodoById(myTodo,4,'Go to the gym'))

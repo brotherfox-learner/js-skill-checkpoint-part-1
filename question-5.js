@@ -31,6 +31,10 @@ const calculateTotalPrice = (productList, code) => {
       : code === "SALE50"
       ? (totalPrice * 50) / 100
       : totalPrice;
+  return discountedPrice;
+};
+console.log(calculateTotalPrice(products, promotionCode));
+
   // // If-else - 1
   // let discountedPrice = totalPrice;
   // if (code === "SALE20") {
@@ -38,13 +42,9 @@ const calculateTotalPrice = (productList, code) => {
   // } else if (code === "SALE50") {
   //   discountedPrice = (totalPrice * 50) / 100;
   // }
-
   // // Switch-case - 2
   // switch(code){
   //   case("SALE20"): discountedPrice = (totalPrice * 80) / 100; break;
   //   case("SALE50"): discountedPrice = (totalPrice * 50) / 100; break;
   //   default: discountedPrice = totalPrice;
   // }
-  return discountedPrice;
-};
-console.log(calculateTotalPrice(products, promotionCode));

@@ -17,3 +17,22 @@ const findMinQuantity = (fruits) => {
 };
 
 console.log(findMinQuantity(inventory));
+
+// //Add Find max fruit
+// const findMaxQuantity = (fruits) => {
+//   let minFruit = fruits[0];
+//   for (let fruit of fruits) {
+//     if (fruit.quantity > minFruit.quantity) {
+//       minFruit = fruit;
+//     }
+//   }
+//   let msg = `สินค้าที่มีจำนวนสูงที่สุดในคลังสินค้าคือ ${minFruit.name} ซึ่งมี ${minFruit.quantity} ชิ้น`;
+//   return msg;
+// };
+// console.log(findMaxQuantity(inventory));
+// //Higher order to call function
+// const displayFruit = (fruitList, callback) => {
+//   return callback(fruitList)
+// }
+// console.log(displayFruit(inventory,findMinQuantity))
+// console.log(displayFruit(inventory,findMaxQuantity))
